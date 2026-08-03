@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "src"
+version = "0.0.1"
+description = "MLOps model for productionizing models"
+authors = [
+    {name = "Ritik Sharma", email = "rs9816467714@gmail.com"}
+]
+
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+packages = {find = {}}
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}

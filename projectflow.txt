@@ -1,0 +1,9 @@
+1. create the project files template but this time not manually but using the automated code which i written in the template.py
+2. create a setup.py and  project.toml files
+create virtual env, activate it,install the requirements
+conda create -n proji python= 3.10 -y
+conda activate proji
+add required modules to the requirements.txt
+Do pip install -r 'requirements.txt'
+
+Do a pip list on terminal to make sure all the local packages are install
