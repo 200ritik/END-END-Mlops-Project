@@ -75,15 +75,11 @@ class DataForm:
 # Route to render the main page with the form
 @app.get("/", tags=["authentication"])
 async def index(request: Request):
-    """
-    Renders the main HTML form page for vehicle data input.
-    """
     return templates.TemplateResponse(
         request=request,
         name="vehicledata.html",
-        context={"context": "Rendering"}
-)
-
+        context={"context": "Rendering"},
+    )
 # Route to trigger the model training process
 @app.get("/train")
 async def trainRouteClient():
